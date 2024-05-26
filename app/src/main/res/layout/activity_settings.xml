@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спонсируются"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Аллергия" />
+
+    <Button
+        android:id="@+id/btnSponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спонсор"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnAchievements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Достижения"
+        android:layout_marginStart="8dp" />
+    <!-- Список спонсируемых -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSponsored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal" />
+
+    <!-- Добавьте элементы для настроек -->
+</LinearLayout>
